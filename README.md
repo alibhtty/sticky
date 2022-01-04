@@ -1,2 +1,0 @@
-# Carrusel
-Integración
