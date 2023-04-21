@@ -1,0 +1,2 @@
+# sticky
+Rotación img
