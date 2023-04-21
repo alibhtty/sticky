@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+<div class="header header-fixed header-logo-right bg-transparent">
+<a href="index-components.html" class="default-link header-title color-white">Sticky Mobile</a>
+<a href="index-components.html" class="default-link header-icon header-icon-1 color-white"><i class="fas fa-arrow-left"></i></a>
+</div>
+
+<style>
+		.particle {
+			left:-30px;
+			right:-30px;
+			top:-350px;
+			bottom:-350px;
+			height:200%;
+			z-index:120;
+			pointer-events:none;
+			position: fixed;
+		}
+
+		.particle span {
+			display: inline-block;
+			animation: particles 3s linear 2s 20;
+			position: relative;
+		}
+		.particle span:after,
+		.particle span:before {
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			transform: rotate(120deg);
+		}
+		.particle u:before {transform: rotate(240deg);}
+
+		/*main animation*/
+		@-webkit-keyframes particles {
+			  0% {-webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);}
+			  100% {-webkit-transform: translate3d(15px, 1200px, 0px) rotate(180deg) scale(0.6);}
+		}
+
+		/*color of particles*/
+		.particle i{color:rgba(160, 206, 203, 0.7);}
+		/*setting the interval for particle groups*/
+		.particle span:nth-child(3n + 0) {animation-duration: 10s; animation-iteration-count: 100;}
+		.particle span:nth-child(3n + 1) {animation-duration: 13s; animation-iteration-count: 100;}
+		.particle span:nth-child(3n + 2) {animation-duration: 15s; animation-iteration-count: 100;}
+
+		/* different delays so they don't all start at the same time */
+		.particle span:nth-child(7n + 0) {opacity: 0.1; animation-delay: 0s;}
+		.particle span:nth-child(7n + 1) {opacity: 0.2; animation-delay: 2s;}
+		.particle span:nth-child(7n + 2) {opacity: 0.3; animation-delay: 4s;}
+		.particle span:nth-child(7n + 3) {opacity: 0.4; animation-delay: 6s;}
+		.particle span:nth-child(7n + 4) {opacity: 0.5; animation-delay: 8s;}
+		.particle span:nth-child(7n + 5) {opacity: 0.6; animation-delay: 10s;}
+		.particle span:nth-child(7n + 6) {opacity: 0.7; animation-delay: 12s;}
+	</style>
+<div class="particle">
+
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-10"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-40"></i></span>
+<span><i class="fa fa-snowflake font-35"></i></span>
+<span><i class="fa fa-snowflake font-30"></i></span>
+<span><i class="fa fa-snowflake font-25"></i></span>
+<span><i class="fa fa-snowflake font-20"></i></span>
+<span><i class="fa fa-snowflake font-15"></i></span>
+</div>
+
+<div class="page-content pb-0">
+<div class="card card-style m-0 rounded-0" style="background-image:url(images/pictures_vertical/bg1.jpg)" data-card-height="cover">
+<div class="card-center">
+<h1 class="color-white text-center mb-0 font-40">Happy Holidays</h1>
+<p class="font-15 pt-2 color-white text-center mb-0">Merry Christmas and a Happy New Year!</p>
+<p class="font-13 px-3 text-center color-white opacity-60 pt-4">
+You can use this particle effect with any icon you want from Font Awesome 5. It's 100% CSS3 built for best performance and smoothness.
+</p>
+<a href="index-components.html" class="default-link btn btn-m btn-center-l font-700 text-uppercase rounded-m bg-white color-black">Continue with Sticky</a>
+</div>
+<div class="card-overlay rounded-0 bg-black opacity-80"></div>
+</div>
+</div>
+
+</div>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
